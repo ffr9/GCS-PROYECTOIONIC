@@ -1,0 +1,7 @@
+{
+  "name": "foodlink",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
