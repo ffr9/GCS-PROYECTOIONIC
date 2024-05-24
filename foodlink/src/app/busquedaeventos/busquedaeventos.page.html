@@ -1,13 +1,44 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>busquedaeventos</ion-title>
+    <ion-title>BÚSQUEDA DE EVENTOS</ion-title>
+    <ion-avatar slot="end">
+      <img src="assets/face.png" />
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">busquedaeventos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding" style="background-color: #007bff;">
+  <div class="search-container">
+    <div class="search-header">
+      <ion-text color="light">
+        <h1 style="font-size: 24px; text-align: center; margin-top: 20px; font-weight: bold; color: white;">BÚSQUEDA DE EVENTOS</h1>
+      </ion-text>
+    </div>
+    <ion-searchbar placeholder="Buscar evento" style="margin: 20px auto; width: 90%;"></ion-searchbar>
+    <div class="event-list" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+      <ion-card class="event-card">
+        <ion-card-content>
+          <ion-text color="dark">
+            <p style="font-size: 20px;"><strong>EVENTO UNICEF</strong><br>C/falsa, 12 <ion-icon name="location-outline"></ion-icon></p>
+            <p style="font-size: 18px;">12-01-2024 <br>14-01-2024</p>
+            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;">Participar</ion-button>
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="event-card">
+        <ion-card-content>
+          <ion-text color="dark">
+            <p style="font-size: 20px;"><strong>EVENTO UNICEF</strong><br>C/falsa, 12 <ion-icon name="location-outline"></ion-icon></p>
+            <p style="font-size: 18px;">12-01-2024 <br>14-01-2024</p>
+            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;">Participar</ion-button>
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+      <div class="pagination" style="text-align: center;">
+        <ion-text color="light">
+          <p><span style="background-color: white; color: #007bff; padding: 5px 10px; border-radius: 50%;">1</span> 2 3</p>
+        </ion-text>
+      </div>
+    </div>
+  </div>
 </ion-content>

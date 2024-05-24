@@ -15,10 +15,6 @@ const routes: Routes = [
     loadChildren: () => import('./busquedaeventos/busquedaeventos.module').then( m => m.BusquedaeventosPageModule)
   },
   {
-    path: 'unicef',
-    loadChildren: () => import('./unicef/unicef.module').then( m => m.UnicefPageModule)
-  },
-  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },

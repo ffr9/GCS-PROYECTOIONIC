@@ -1,13 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>perfil</ion-title>
+    <ion-title>PERFIL USUARIO</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding" style="background-color: #007bff;">
+  <div class="profile-container">
+    <div class="profile-header">
+      <ion-text color="light">
+        <h1 style="font-size: 24px; text-align: center; margin-top: 20px; font-weight: bold; color: white;">PERFIL USUARIO</h1>
+      </ion-text>
+    </div>
+    <div class="profile-image">
+      <ion-avatar style="margin: auto;">
+        <img src="assets/face.png" />
+      </ion-avatar>
+    </div>
+    <ion-text color="dark" class="profile-name" style="text-align: center; margin-top: 10px;">
+      <h2>USUARIO 1</h2>
+    </ion-text>
+    <ion-card style="background-color: #007bff; color: white;">
+      <ion-card-content>
+        <ion-text color="light">
+          <p style="margin-bottom: 40px;"><strong>Ocupación</strong><br>Estudiante</p>
+          <p style="margin-bottom: 40px;"><strong>Intereses</strong><br>Buscar asociaciones con las que colaborar para donar la comida</p>
+          <p><strong>Hobbies</strong><br>Me gusta programar</p>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+    <div style="text-align: center; margin-top: auto; padding-top: 20px;">
+      <ion-button color="light" shape="round" style="--background: white; --color: #007bff;">MODIFICAR</ion-button>
+    </div>
+  </div>
 </ion-content>
