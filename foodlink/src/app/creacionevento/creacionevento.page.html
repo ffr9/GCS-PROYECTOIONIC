@@ -1,13 +1,43 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>creacionevento</ion-title>
+    <ion-title>Creación de un evento</ion-title>
+    <ion-avatar slot="end">
+      <img src="assets/face.png" />
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">creacionevento</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="search-container">
+    <div class="search-header">
+      <h1 style="font-size: 24px; text-align: center; margin-top: 20px; font-weight: bold; color: #007bff;">Creación de un evento</h1>
+    </div>
+    
+    <ion-item lines="none" class="input-item">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Nombre del evento"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Organizador del evento"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Selecciona fecha de inicio" readonly="true" (click)="openCalendar('start')"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Selecciona fecha de fin" readonly="true" (click)="openCalendar('end')"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Lugar del evento"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" class="create-button">Crear evento</ion-button>
+  </div>
 </ion-content>
