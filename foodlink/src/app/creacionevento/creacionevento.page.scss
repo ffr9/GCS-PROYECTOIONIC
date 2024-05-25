@@ -1,11 +1,16 @@
 ion-content {
     --ion-background-color: #007bff; /* Fondo azul */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding: 20px;
 }
 
@@ -14,9 +19,7 @@ ion-content {
     background-color: transparent; /* Fondo transparente */
     padding: 10px 0;
     margin-bottom: 20px;
-    background-color: white; /* Fondo blanco */
-    border-radius: 15px; /* Esquinas redondeadas */
-
+    text-align: center;
 }
 
 .input-item {
@@ -33,7 +36,8 @@ ion-content {
     color: #007bff; /* Texto en azul */
 }
 
-.input-item ion-input {
+.input-item ion-input,
+.input-item ion-datetime {
     background-color: white; /* Fondo blanco */
     color: #007bff; /* Texto en azul */
     border-radius: 15px; /* Esquinas redondeadas */
@@ -42,7 +46,8 @@ ion-content {
     width: 100%; /* Ajusta el ancho según sea necesario */
 }
 
-.input-item ion-input::placeholder {
+.input-item ion-input::placeholder,
+.input-item ion-datetime::placeholder {
     font-weight: bold; /* Placeholder en negrita */
 }
 
@@ -53,4 +58,6 @@ ion-content {
     background-color: white; /* Fondo blanco */
     border-radius: 15px; /* Esquinas redondeadas */
     color: #007bff; /* Texto en azul */
+    --background: white; /* Fondo blanco */
+    --color: #007bff; /* Texto en azul */
 }

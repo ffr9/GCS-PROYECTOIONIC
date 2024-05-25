@@ -23,14 +23,14 @@
       <ion-input type="text" placeholder="Organizador del evento"></ion-input>
     </ion-item>
 
-    <ion-item lines="none" class="input-item">
+    <ion-item lines="none" class="input-item" (click)="openCalendar('start')">
       <ion-label></ion-label>
-      <ion-input type="text" placeholder="Selecciona fecha de inicio" readonly="true" (click)="openCalendar('start')"></ion-input>
+      <ion-input type="text" [value]="startDate" placeholder="Selecciona fecha de inicio" readonly="true"></ion-input>
     </ion-item>
 
-    <ion-item lines="none" class="input-item">
+    <ion-item lines="none" class="input-item" (click)="openCalendar('end')">
       <ion-label></ion-label>
-      <ion-input type="text" placeholder="Selecciona fecha de fin" readonly="true" (click)="openCalendar('end')"></ion-input>
+      <ion-input type="text" [value]="endDate" placeholder="Selecciona fecha de fin" readonly="true"></ion-input>
     </ion-item>
 
     <ion-item lines="none" class="input-item">
