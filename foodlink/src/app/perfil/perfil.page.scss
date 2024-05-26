@@ -1,3 +1,7 @@
+ion-content {
+    --ion-background-color: #007bff; /* Fondo azul */
+}
+
 .profile-container {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,7 @@
   
 .profile-header {
     width: 100%;
-    background-color: #007bff;
+    background-color: white;
     border-radius: 15px;
     padding: 10px 0;
     margin-bottom: 20px;

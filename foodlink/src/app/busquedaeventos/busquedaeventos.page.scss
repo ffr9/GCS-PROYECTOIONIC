@@ -1,3 +1,11 @@
+    ion-content {
+        --ion-background-color: #007bff; /* Fondo azul */
+    }
+
+    ion-searchbar {
+        --ion-background-color: white; /* Fondo azul */
+    }
+  
   .search-container {
       display: flex;
       flex-direction: column;
@@ -7,12 +15,13 @@
   }
 
   .search-header {
-      width: 100%;
-      background-color: #007bff;
-      border-radius: 15px;
-      padding: 10px 0;
-      margin-bottom: 20px;
-  }
+    width: 100%;
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 15px; /* Esquinas redondeadas */
+}
 
   ion-card.event-card {
       width: 90%;
@@ -26,4 +35,5 @@
 
   ion-card-content p {
       margin-bottom: 10px;
+      color: white;
   }
