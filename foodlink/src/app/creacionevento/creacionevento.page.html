@@ -1,9 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Creación de un evento</ion-title>
-    <ion-avatar slot="end">
-      <img src="assets/face.png" />
-    </ion-avatar>
+    <ion-button fill="clear" slot="end" [routerLink]="['/tabs/perfil']">
+      <ion-avatar>
+        <img src="assets/face.png" />
+      </ion-avatar>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -38,6 +40,6 @@
       <ion-input type="text" placeholder="Lugar del evento"></ion-input>
     </ion-item>
 
-    <ion-button expand="block" color="primary" class="create-button">Crear evento</ion-button>
+    <ion-button expand="block" color="primary" class="create-button" [routerLink]="['/tabs/busquedaeventos']">Crear evento</ion-button>
   </div>
 </ion-content>

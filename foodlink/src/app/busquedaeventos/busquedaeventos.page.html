@@ -1,9 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Búsqueda de eventos</ion-title>
-    <ion-avatar slot="end">
-      <img src="assets/face.png" />
-    </ion-avatar>
+    <ion-button fill="clear" slot="end" [routerLink]="['/tabs/perfil']">
+      <ion-avatar>
+        <img src="assets/face.png" />
+      </ion-avatar>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -21,7 +23,7 @@
           <ion-text color="dark">
             <p style="font-size: 20px;"><strong>EVENTO UNICEF</strong><br>C/falsa, 12 <ion-icon name="location-outline"></ion-icon></p>
             <p style="font-size: 18px;">12-01-2024 <br>14-01-2024</p>
-            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;">Participar</ion-button>
+            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;" [routerLink]="['/tabs/evento']">Participar</ion-button>
           </ion-text>
         </ion-card-content>
       </ion-card>
@@ -30,7 +32,7 @@
           <ion-text color="dark">
             <p style="font-size: 20px;"><strong>EVENTO UNICEF</strong><br>C/falsa, 12 <ion-icon name="location-outline"></ion-icon></p>
             <p style="font-size: 18px;">12-01-2024 <br>14-01-2024</p>
-            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;">Participar</ion-button>
+            <ion-button color="light" shape="round" style="--background: white; --color: #007bff; margin-left: 300px;" [routerLink]="['/tabs/evento']">Participar</ion-button>
           </ion-text>
         </ion-card-content>
       </ion-card>
